@@ -1,0 +1,17 @@
+.root {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  gap: 20px;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+}
