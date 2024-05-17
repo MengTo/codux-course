@@ -1,0 +1,208 @@
+.headerButtonText {
+  flex: 1;
+  position: relative;
+  line-height: 30px;
+  font-weight: 500;
+}
+.headerButtonCaption {
+  align-self: stretch;
+  position: relative;
+  line-height: 18px;
+}
+.headerButtonFootnote {
+  align-self: stretch;
+  position: relative;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.7);
+}
+.headerButtonInfo {
+  width: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: center;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.headerButton {
+  text-decoration: none;
+  flex: 1;
+  backdrop-filter: blur(100px);
+  border-radius: 20px;
+  background-color: #000;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 8px 16px;
+  gap: 8px;
+  min-width: 190px;
+  transition: 1s;
+  color: inherit;
+}
+.headerButton:hover {
+  background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), #000;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+}
+.headerMenu {
+  width: 100%;
+  border-radius: 32px;
+  background-color: #000;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 12px;
+  gap: 12px;
+  min-width: 230px;
+  max-width: 680px;
+}
+.designs {
+  flex: 1;
+  position: relative;
+  line-height: 20px;
+  font-weight: 500;
+  display: -webkit-inline-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.buttonLink {
+  text-decoration: none;
+  flex: 1;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid rgba(255, 255, 255, 0);
+  box-sizing: border-box;
+  height: 32px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 6px 16px;
+  min-width: 160px;
+  max-width: 240px;
+  color: inherit;
+}
+.buttonLink:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-sizing: border-box;
+  transition: 1s;
+}
+.footerLinks {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 12px;
+  min-width: 280px;
+  font-size: 13px;
+}
+.buttonCircleIcon {
+  width: 44px;
+  position: relative;
+  border-radius: 30px;
+  height: 44px;
+  object-fit: cover;
+  transition: 1s;
+}
+.buttonCircleIcon:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-sizing: border-box;
+}
+.designcode {
+  width: 272px;
+  position: relative;
+  letter-spacing: -0.05em;
+  display: none;
+}
+.logoFooter {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 5px 0px;
+  gap: 4px;
+}
+.designIosApplications {
+  align-self: stretch;
+  position: relative;
+  font-size: 13px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.7);
+}
+.social {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.privacyTerms {
+  align-self: stretch;
+  position: relative;
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(255, 255, 255, 0.5);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.footerCompany {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 20px;
+  min-width: 200px;
+  max-width: 320px;
+  font-size: 18px;
+}
+.drawer {
+  width: 324px;
+  position: relative;
+  background-color: rgb(0, 0, 0);
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 20px;
+  box-sizing: border-box;
+  gap: 60px;
+  max-width: 90%;
+  text-align: left;
+  font-size: 20px;
+  color: #fff;
+}
+.drawer.animate {
+  animation: 0.25s ease 0s 1 normal forwards slide-in-right;
+}
+
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

@@ -1,51 +1,96 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=SF+Pro:wght@400;600&display=swap");
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
-a:hover {
-  color: #535bf2;
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  justify-content: center;
-  min-width: 320px;
-  min-height: 100vh;
+  line-height: normal;
+  font-family: Manrope;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
+:root {
+  /* font sizes */
+  --subheadline-semibold-size: 15px;
+  --caption-2-regular-size: 11px;
+  --headline-medium-size: 20px;
+  --body-regular-size: 16px;
+  --headings-heading-5-size: 24px;
+  --headings-heading-2-size: 50px;
+  --small-regular-size: 12px;
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  /* Colors */
+  --background-primary: #fff;
+  --container-divider1: rgba(255, 255, 255, 0.1);
+  --color-gray-100: rgba(0, 0, 0, 0);
+  --background-tertiary: rgba(0, 0, 0, 0.05);
+  --container-divider-secondary: rgba(0, 0, 0, 0.2);
+  --foreground-tertiary: rgba(0, 0, 0, 0.5);
+  --foreground-secondary: rgba(0, 0, 0, 0.7);
+  --color-gray-200: rgba(255, 255, 255, 0.2);
+  --container-divider: rgba(0, 0, 0, 0.1);
+  --container-background-tertiary: rgba(255, 255, 255, 0.9);
+  --foreground-primary: #000;
+
+  /* Gaps */
+  --gap-41xl: 60px;
+  --gap-3xs: 10px;
+  --gap-5xs: 8px;
+
+  /* Paddings */
+  --padding-3xs: 10px;
+  --padding-5xs: 8px;
+  --padding-base: 16px;
+
+  /* Border radiuses */
+  --br-11xl: 30px;
+  --br-80xl: 99px;
+  --br-xl: 20px;
+
+  /* Effects */
+  --blur-100: blur(100px);
+  --shadow-large-right-subtle: 0px 1px 2px rgba(0, 0, 0, 0.05),
+    10px 10px 30px rgba(0, 0, 0, 0.05), 40px 40px 80px rgba(0, 0, 0, 0.02);
 }
