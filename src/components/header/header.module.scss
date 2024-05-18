@@ -4,13 +4,14 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   text-align: left;
   font-size: 28px;
   color: #000;
   font-family: Manrope;
   max-width: 1100px;
+  align-content: center;
 }
 .logo {
   /* Auto layout */
@@ -28,6 +29,7 @@
   letter-spacing: -2px;
 
   color: #000000;
+  text-decoration: none;
 }
 .designs {
   flex: 1;
@@ -75,6 +77,8 @@
   padding: 8px 16px;
   gap: 8px;
   min-width: 200px;
+  text-decoration: none;
+  color: black;
 }
 .button1 {
   flex: 1;
@@ -117,4 +121,41 @@
   font-size: 20px;
   color: #000;
   font-family: Manrope;
+  @media (max-width: 800px) {
+    display: none;
+  }
+}
+.logoText {
+  display: block;
+  @media (max-width: 800px) {
+    display: none;
+  }
+}
+.buttonCircle {
+  text-decoration: none;
+  width: 44px;
+  position: relative;
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  height: 44px;
+  transition: 1s;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  @media (max-width: 800px) {
+    display: flex;
+  }
+}
+.buttonCircle:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-sizing: border-box;
+}
+.drawer {
+  position: absolute;
+  right: 0px;
+  top: 100px;
+  display: none;
 }

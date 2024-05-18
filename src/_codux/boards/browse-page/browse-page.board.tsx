@@ -1,17 +1,16 @@
 import { createBoard } from '@wixc3/react-board';
-import { Header } from '../../../components/header/header';
+import { BrowsePage } from '../../../components/browse-page/browse-page';
 import { MemoryRouter } from 'react-router-dom';
 
 export default createBoard({
-    name: 'Header',
+    name: 'BrowsePage',
     Board: () => (
         <MemoryRouter>
-            <Header />
+            <BrowsePage />
         </MemoryRouter>
     ),
     isSnippet: true,
     environmentProps: {
-        canvasWidth: 1137,
-        windowWidth: 976,
+        canvasWidth: 1024,
     },
 });
