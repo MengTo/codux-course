@@ -144,6 +144,7 @@
   align-items: center;
   justify-content: center;
   display: none;
+  cursor: pointer;
   @media (max-width: 800px) {
     display: flex;
   }
@@ -156,6 +157,18 @@
 .drawer {
   position: absolute;
   right: 0px;
-  top: 100px;
-  display: none;
+  top: 72px;
+  z-index: 10;
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+}
+@keyframes fadeIn {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }

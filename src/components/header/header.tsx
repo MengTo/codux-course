@@ -4,6 +4,7 @@ import DesigncodeLogoSvg from '../../assets/designcode  logo.svg';
 import { Link } from 'react-router-dom';
 import MenuAlignLeftDescSvg from '../../assets/menu align left desc.svg';
 import { Drawer } from '../drawer/drawer';
+import { useState } from 'react';
 
 export interface HeaderProps {
     className?: string;
@@ -14,16 +15,24 @@ export interface HeaderProps {
  * To create custom component templates, see https://help.codux.com/kb/en/article/kb16522
  */
 export const Header = ({ className }: HeaderProps) => {
+    const [isDrawerVisible, setDrawerVisible] = useState(false);
+
+    const toggleDrawer = () => {
+        setDrawerVisible(!isDrawerVisible);
+    };
+
     return (
         <div className={classNames(styles.root, className)}>
-            <div className={styles.drawer}>
-                <Drawer />
-            </div>
+            {isDrawerVisible && (
+                <div className={styles.drawer}>
+                    <Drawer />
+                </div>
+            )}
             <Link to={'/'} className={styles.logo}>
                 <img src={DesigncodeLogoSvg} alt="" />
                 <div className={styles.logoText}>DesignCode</div>
             </Link>
-            <a className={styles.buttonCircle}>
+            <a className={styles.buttonCircle} onClick={toggleDrawer}>
                 <img src={MenuAlignLeftDescSvg} alt="" height="24px" width="24px" />
             </a>
             <div className={styles.header}>

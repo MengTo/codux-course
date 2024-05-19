@@ -175,7 +175,7 @@
   font-size: 18px;
 }
 .drawer {
-  width: 324px;
+  width: 280px;
   position: relative;
   background-color: rgb(0, 0, 0);
   height: 100%;
@@ -187,22 +187,8 @@
   padding: 20px;
   box-sizing: border-box;
   gap: 60px;
-  max-width: 90%;
   text-align: left;
   font-size: 20px;
   color: #fff;
-}
-.drawer.animate {
-  animation: 0.25s ease 0s 1 normal forwards slide-in-right;
-}
-
-@keyframes slide-in-right {
-  0% {
-    transform: translateX(200px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
+  border-radius: 30px;
 }
