@@ -1,33 +1,25 @@
-import classNames from 'classnames';
 import styles from './gallery.module.scss';
-import Homeimage3Jpeg from '../../assets/homeimage3.jpeg';
 import Homeimage2Jpeg from '../../assets/homeimage2.jpeg';
+import Homeimage3Jpeg from '../../assets/homeimage3.jpeg';
 import Homeimage4Jpeg from '../../assets/homeimage4.jpeg';
-import BookmarkSvg from '../../assets/bookmark.svg';
+import { GalleryImage } from '../gallery-image/gallery-image';
 
 export interface GalleryProps {
     className?: string;
 }
 
-/**
- * This component was created using Codux's Default new component template.
- * To create custom component templates, see https://help.codux.com/kb/en/article/kb16522
- */
+const images = [
+    { src: Homeimage2Jpeg, alt: 'Home Image 2' },
+    { src: Homeimage3Jpeg, alt: 'Home Image 3' },
+    { src: Homeimage4Jpeg, alt: 'Home Image 4' },
+];
+
 export const Gallery = ({ className }: GalleryProps) => {
     return (
         <div className={styles.gallery}>
-            <div className={styles.galleryItem}>
-                <img className={styles.galleryItemImage} alt="" src={Homeimage3Jpeg} />
-                <a className={styles.circleButton}>
-                    <img className={styles.bookmarkIcon} alt="" src={BookmarkSvg} />
-                </a>
-            </div>
-            <div className={styles.galleryItem}>
-                <img className={styles.galleryItemImage} alt="" src={Homeimage2Jpeg} />
-            </div>
-            <div className={styles.galleryItem}>
-                <img className={styles.galleryItemImage} alt="" src={Homeimage4Jpeg} />
-            </div>
+            {images.map((image, index) => (
+                <GalleryImage key={index} image={image.src} alt={image.alt} />
+            ))}
         </div>
     );
 };

@@ -1,22 +1,18 @@
-import classNames from 'classnames';
 import styles from './gallery-image.module.scss';
 import BookmarkSvg from '../../assets/bookmark.svg';
 import Homeimage2Jpeg from '../../assets/homeimage2.jpeg';
 
 export interface GalleryImageProps {
-    className?: string;
+    image?: string;
+    alt?: string;
 }
 
-/**
- * This component was created using Codux's Default new component template.
- * To create custom component templates, see https://help.codux.com/kb/en/article/kb16522
- */
-export const GalleryImage = ({ className }: GalleryImageProps) => {
+export const GalleryImage = ({ image = Homeimage2Jpeg, alt = 'Image' }: GalleryImageProps) => {
     return (
         <div className={styles.galleryItem}>
-            <img className={styles.galleryItemImage} alt="" src={Homeimage2Jpeg} />
+            <img className={styles.galleryItemImage} alt="Image" src={image} />
             <a className={styles.circleButton}>
-                <img className={styles.bookmarkIcon} alt="" src={BookmarkSvg} />
+                <img className={styles.bookmarkIcon} alt="Bookmark" src={BookmarkSvg} />
             </a>
         </div>
     );
