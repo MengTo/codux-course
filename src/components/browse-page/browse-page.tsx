@@ -37,15 +37,15 @@ export const BrowsePage = ({ className }: BrowsePageProps) => {
             <Header />
             <div className={styles.menu}>
                 <div className={styles.dropdowns}>
-                    <div className={styles.button}>
+                    <div className={classNames(styles.button, styles.selected)}>
                         <div className={styles.newest}>Newest</div>
                         <img className={styles.chevronDownIcon} alt="" src={ChevronDownSvg} />
                     </div>
-                    <div className={styles.button1}>
+                    <div className={styles.button}>
                         <div className={styles.newest}>Designs</div>
                         <img className={styles.chevronDownIcon} alt="" src={ChevronDownSvg} />
                     </div>
-                    <div className={styles.button1}>
+                    <div className={styles.button}>
                         <div className={styles.newest}>Bookmarks</div>
                         <img className={styles.chevronDownIcon} alt="" src={ChevronDownSvg} />
                     </div>

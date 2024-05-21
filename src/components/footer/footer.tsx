@@ -9,10 +9,6 @@ export interface FooterProps {
     className?: string;
 }
 
-/**
- * This component was created using Codux's Default new component template.
- * To create custom component templates, see https://help.codux.com/kb/en/article/kb16522
- */
 export const Footer = ({ className }: FooterProps) => {
     return (
         <div className={styles.footer}>
@@ -45,27 +41,9 @@ export const Footer = ({ className }: FooterProps) => {
                     <div className={styles.recentUpdatesThoughts}>
                         Recent updates, thoughts, news, and announcements straight to your email.
                     </div>
-                    <div className={styles.button}>
-                        <div className={styles.elapsed}>
-                            <div className={styles.elapsed1}>2024</div>
-                            <div className={styles.div}>January</div>
-                        </div>
-                        <div className={styles.emailAddress}>Email address</div>
-                        <div className={styles.elapsed}>
-                            <div className={styles.elapsed1}>New</div>
-                            <div className={styles.div}>Components</div>
-                        </div>
-                    </div>
+                    <input className={styles.button} placeholder="Email address" />
                     <div className={styles.button1}>
-                        <div className={styles.elapsed}>
-                            <div className={styles.elapsed1}>2024</div>
-                            <div className={styles.div}>January</div>
-                        </div>
                         <div className={styles.subscribe}>Subscribe</div>
-                        <div className={styles.elapsed}>
-                            <div className={styles.elapsed1}>New</div>
-                            <div className={styles.div}>Components</div>
-                        </div>
                     </div>
                 </div>
             </div>

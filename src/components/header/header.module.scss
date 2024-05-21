@@ -28,26 +28,36 @@
   line-height: 38px;
   letter-spacing: -2px;
 
-  color: #000000;
+  color: var(--foreground-primary);
   text-decoration: none;
+  &:hover {
+    color: var(--foreground-secondary);
+  }
+  @media (prefers-color-scheme: dark) {
+    img {
+      filter: invert(1);
+    }
+  }
 }
 .designs {
   flex: 1;
   position: relative;
   line-height: 30px;
   font-weight: 500;
+  color: var(--foreground-primary);
 }
 .total {
   align-self: stretch;
   position: relative;
   line-height: 18px;
+  color: var(--foreground-secondary);
 }
 .div {
   align-self: stretch;
   position: relative;
   font-size: 16px;
   line-height: 24px;
-  color: rgba(0, 0, 0, 0.7);
+  color: var(--foreground-secondary);
 }
 .info {
   width: 60px;
@@ -67,8 +77,8 @@
     40px 40px 80px rgba(0, 0, 0, 0.02);
   backdrop-filter: blur(40px);
   border-radius: 20px;
-  background-color: rgba(0, 0, 0, 0.05);
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: var(--background-primary);
+  border: 1px solid var(--container-divider);
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
@@ -79,6 +89,11 @@
   min-width: 200px;
   text-decoration: none;
   color: black;
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+  &:hover {
+    background-color: var(--container-divider-secondary);
+    border-color: var(--container-divider-secondary);
+  }
 }
 .button1 {
   flex: 1;
@@ -105,8 +120,8 @@
     40px 40px 80px rgba(0, 0, 0, 0.02);
   backdrop-filter: blur(40px);
   border-radius: 32px;
-  background-color: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--background-primary);
+  border: 1px solid var(--container-divider);
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
@@ -130,6 +145,7 @@
   @media (max-width: 800px) {
     display: none;
   }
+  color: var(--foreground-primary);
 }
 .buttonCircle {
   text-decoration: none;
@@ -171,4 +187,7 @@
     transform: translateY(0);
     opacity: 1;
   }
+}
+.selected {
+  background-color: var(--container-divider-secondary);
 }
