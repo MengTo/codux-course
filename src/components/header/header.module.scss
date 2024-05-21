@@ -152,8 +152,8 @@
   width: 44px;
   position: relative;
   border-radius: 30px;
-  background-color: rgba(0, 0, 0, 0.05);
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--container-divider);
+  border: 1px solid var(--container-divider);
   box-sizing: border-box;
   height: 44px;
   transition: 1s;
@@ -164,6 +164,11 @@
   @media (max-width: 800px) {
     display: flex;
   }
+  @media (prefers-color-scheme: dark) {
+    img {
+      filter: invert(1);
+    }
+  }
 }
 .buttonCircle:hover {
   background-color: rgba(255, 255, 255, 0.2);
@@ -171,20 +176,20 @@
   box-sizing: border-box;
 }
 .drawer {
-  position: absolute;
+  position: fixed;
   right: 0px;
-  top: 72px;
+  top: 0px;
   z-index: 10;
   opacity: 0;
   animation: fadeIn 0.5s forwards;
 }
 @keyframes fadeIn {
   0% {
-    transform: translateY(-20px);
+    transform: translateX(20px);
     opacity: 0;
   }
   100% {
-    transform: translateY(0);
+    transform: translateX(0);
     opacity: 1;
   }
 }

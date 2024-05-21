@@ -34,7 +34,7 @@ export interface BrowsePageProps {
 export const BrowsePage = ({ className }: BrowsePageProps) => {
     return (
         <div className={classNames(styles.root, className)}>
-            <Header />
+            <Header selectedButton='Designs' />
             <div className={styles.menu}>
                 <div className={styles.dropdowns}>
                     <div className={classNames(styles.button, styles.selected)}>
@@ -52,7 +52,7 @@ export const BrowsePage = ({ className }: BrowsePageProps) => {
                 </div>
                 <div className={styles.search}>
                     <div className={styles.timer}>
-                        <div className={styles.search1}>Search</div>
+                        <input className={styles.search1} placeholder="Search" />
                         <img className={styles.chevronDownIcon} alt="" src={MagnifyingGlassSvg} />
                     </div>
                 </div>

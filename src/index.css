@@ -145,23 +145,6 @@ body {
   --headings-heading-2-size: 50px;
   --small-regular-size: 12px;
 
-  /* Colors */
-  --background-primary: rgb(255, 255, 255);
-  --background-secondary: rgb(255, 255, 255 , 0.1);
-  --background-tertiary: rgb(0, 0, 0 , 0.05);
-  --button-foreground: rgb(255, 255, 255);
-  --container-background: rgb(255, 255, 255 , 0.6);
-  --container-background-recessed: rgb(255, 255, 255 , 0.9);
-  --container-background-secondary: rgb(255, 255, 255 , 0.1);
-  --container-background-tertiary: rgb(255, 255, 255 , 0.9);
-  --container-border: rgb(255, 255, 255 , 0.5);
-  --container-border-secondary: rgb(255, 255, 255 , 0.2);
-  --container-divider: rgb(0, 0, 0 , 0.1);
-  --container-divider-secondary: rgb(0, 0, 0 , 0.2);
-  --foreground-primary: rgb(0, 0, 0);
-  --foreground-secondary: rgb(0, 0, 0 , 0.7);
-  --foreground-tertiary: rgb(0, 0, 0 , 0.5);
-
   /* Gaps */
   --gap-41xl: 60px;
   --gap-3xs: 10px;
@@ -183,8 +166,37 @@ body {
     40px 40px 80px rgba(0, 0, 0, 0.02);
   --transition: transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
 
+  /* Font Size */
+  --small: 12px;
+  --caption: 13px;
+  --footnote: 14px;
+  --body: 16px;
+  --body-large: 18px;
+  --headline: 20px;
+  --heading-5: 24px;
+  --heading-4: 30px;
+  --heading-3: 40px;
+  --heading-2: 50px;
+  --heading-1: 60px;
+
+  /* Colors */
+  --background-primary: rgb(255, 255, 255);
+  --background-secondary: rgb(255, 255, 255 , 0.1);
+  --background-tertiary: rgb(0, 0, 0 , 0.05);
+  --button-foreground: rgb(255, 255, 255);
+  --container-background: rgb(255, 255, 255 , 0.6);
+  --container-background-recessed: rgb(255, 255, 255 , 0.9);
+  --container-background-secondary: rgb(255, 255, 255 , 0.1);
+  --container-background-tertiary: rgb(255, 255, 255 , 0.9);
+  --container-border: rgb(255, 255, 255 , 0.5);
+  --container-border-secondary: rgb(255, 255, 255 , 0.2);
+  --container-divider: rgb(0, 0, 0 , 0.1);
+  --container-divider-secondary: rgb(0, 0, 0 , 0.2);
+  --foreground-primary: rgb(0, 0, 0);
+  --foreground-secondary: rgb(0, 0, 0 , 0.7);
+  --foreground-tertiary: rgb(0, 0, 0 , 0.5);
+
   @media (prefers-color-scheme: dark) {
-    /* Dark Mode Colors */
     --background-primary: rgb(0, 0, 0);
     --background-secondary: rgb(0, 0, 0 , 0.1);
     --background-tertiary: rgb(255, 255, 255 , 0.1);

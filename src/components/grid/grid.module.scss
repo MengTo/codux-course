@@ -8,7 +8,7 @@
   	align-self: stretch;
   	width: 1px;
   	position: relative;
-  	background-color: rgba(0, 0, 0, 0.1);
+  	background-color: var(--container-divider);
 }
 .lines {
   	width: 100%;
