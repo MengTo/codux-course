@@ -1,7 +1,6 @@
-import classNames from 'classnames';
 import styles from './home-page.module.scss';
-import FigmaLogoSvg0, { ReactComponent as FigmaLogoSvg } from '../../assets/Figma  Logo.svg';
-import ChevronRightSvg0, { ReactComponent as ChevronRightSvg } from '../../assets/Chevron Right.svg';
+import FigmaLogoSvg from '../../assets/Figma  Logo.svg';
+import ChevronRightSvg from '../../assets/Chevron Right.svg';
 import Homeimage1Jpeg from '../../assets/homeimage1.jpeg';
 import { Header } from '../../components/header/header';
 import { Gallery } from '../../components/gallery/gallery';
@@ -12,7 +11,7 @@ export interface HomePageProps {
     className?: string;
 }
 
-export const HomePage = ({ className }: HomePageProps) => {
+export const HomePage = ({}: HomePageProps) => {
     return (
         <div className={styles.root}>
             <Grid />
@@ -30,12 +29,12 @@ export const HomePage = ({ className }: HomePageProps) => {
                     </p>
                     <div className={styles.buttons}>
                         <button className={styles.primary}>
-                            <img src={FigmaLogoSvg0} alt="" height="20" width="20" />
+                            <img src={FigmaLogoSvg} alt="" height="20" width="20" />
                             Preview in figma
                         </button>
                         <button className={styles.secondary}>
                             Free download
-                            <img src={ChevronRightSvg0} alt="" height="20" width="20" />
+                            <img src={ChevronRightSvg} alt="" height="20" width="20" />
                         </button>
                     </div>
                 </div>
