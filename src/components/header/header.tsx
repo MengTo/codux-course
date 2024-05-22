@@ -21,7 +21,7 @@ export const Header = ({ className, selectedButton }: HeaderProps) => {
     };
 
     const handleClickOutside = (event: MouseEvent) => {
-        if (drawerRef.current && !drawerRef.current.contains(event.target as Node)) {
+        if (!drawerRef.current || !(drawerRef.current as any).contains(event.target)) {
             setDrawerVisible(false);
         }
     };
