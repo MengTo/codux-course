@@ -1,198 +1,198 @@
 .root {
-  width: 100%;
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  text-align: left;
-  font-size: 28px;
-  color: #000;
-  font-family: Manrope;
-  max-width: 1100px;
-  align-content: center;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    font-size: 28px;
+    color: #000;
+    font-family: Manrope;
+    max-width: 1100px;
+    align-content: center;
 }
 .logo {
-  /* Auto layout */
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 22px 16px;
-  gap: 8px;
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 22px 16px;
+    gap: 8px;
 
-  font-family: 'Manrope';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 38px;
-  letter-spacing: -2px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 38px;
+    letter-spacing: -2px;
 
-  color: var(--foreground-primary);
-  text-decoration: none;
-  &:hover {
-    color: var(--foreground-secondary);
-  }
-  @media (prefers-color-scheme: dark) {
-    img {
-      filter: invert(1);
+    color: var(--foreground-primary);
+    text-decoration: none;
+    &:hover {
+        color: var(--foreground-secondary);
     }
-  }
+    @media (prefers-color-scheme: dark) {
+        img {
+            filter: invert(1);
+        }
+    }
 }
 .designs {
-  flex: 1;
-  position: relative;
-  line-height: 30px;
-  font-weight: 500;
-  color: var(--foreground-primary);
+    flex: 1;
+    position: relative;
+    line-height: 30px;
+    font-weight: 500;
+    color: var(--foreground-primary);
 }
 .total {
-  align-self: stretch;
-  position: relative;
-  line-height: 18px;
-  color: var(--foreground-secondary);
+    align-self: stretch;
+    position: relative;
+    line-height: 18px;
+    color: var(--foreground-secondary);
 }
 .div {
-  align-self: stretch;
-  position: relative;
-  font-size: 16px;
-  line-height: 24px;
-  color: var(--foreground-secondary);
+    align-self: stretch;
+    position: relative;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--foreground-secondary);
 }
 .info {
-  width: 60px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  text-align: center;
-  font-size: 12px;
-  color: rgba(0, 0, 0, 0.5);
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.5);
 }
 .button {
-  flex: 1;
-  box-shadow:
-    0px 1px 2px rgba(0, 0, 0, 0.05),
-    10px 10px 30px rgba(0, 0, 0, 0.05),
-    40px 40px 80px rgba(0, 0, 0, 0.02);
-  backdrop-filter: blur(40px);
-  border-radius: 20px;
-  background-color: var(--background-primary);
-  border: 1px solid var(--container-divider);
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 8px 16px;
-  gap: 8px;
-  min-width: 200px;
-  text-decoration: none;
-  color: black;
-  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
-  &:hover {
-    background-color: var(--container-divider-secondary);
-    border-color: var(--container-divider-secondary);
-  }
+    flex: 1;
+    box-shadow:
+        0px 1px 2px rgba(0, 0, 0, 0.05),
+        10px 10px 30px rgba(0, 0, 0, 0.05),
+        40px 40px 80px rgba(0, 0, 0, 0.02);
+    backdrop-filter: blur(40px);
+    border-radius: 20px;
+    background-color: var(--background-primary);
+    border: 1px solid var(--container-divider);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 8px 16px;
+    gap: 8px;
+    min-width: 200px;
+    text-decoration: none;
+    color: black;
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+    &:hover {
+        background-color: var(--container-divider-secondary);
+        border-color: var(--container-divider-secondary);
+    }
 }
 .button1 {
-  flex: 1;
-  backdrop-filter: blur(100px);
-  border-radius: 20px;
-  background-color: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 8px 16px;
-  gap: 8px;
-  min-width: 200px;
+    flex: 1;
+    backdrop-filter: blur(100px);
+    border-radius: 20px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 8px 16px;
+    gap: 8px;
+    min-width: 200px;
 }
 .header {
-  flex: 1;
-  width: 100%;
-  position: relative;
-  box-shadow:
-    0px 1px 2px rgba(0, 0, 0, 0.05),
-    10px 10px 30px rgba(0, 0, 0, 0.05),
-    40px 40px 80px rgba(0, 0, 0, 0.02);
-  backdrop-filter: blur(40px);
-  border-radius: 32px;
-  background-color: var(--background-primary);
-  border: 1px solid var(--container-divider);
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 12px;
-  gap: 20px;
-  min-width: 230px;
-  max-width: 680px;
-  text-align: left;
-  font-size: 20px;
-  color: #000;
-  font-family: Manrope;
-  @media (max-width: 800px) {
-    display: none;
-  }
+    flex: 1;
+    width: 100%;
+    position: relative;
+    box-shadow:
+        0px 1px 2px rgba(0, 0, 0, 0.05),
+        10px 10px 30px rgba(0, 0, 0, 0.05),
+        40px 40px 80px rgba(0, 0, 0, 0.02);
+    backdrop-filter: blur(40px);
+    border-radius: 32px;
+    background-color: var(--background-primary);
+    border: 1px solid var(--container-divider);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 12px;
+    gap: 20px;
+    min-width: 230px;
+    max-width: 680px;
+    text-align: left;
+    font-size: 20px;
+    color: #000;
+    font-family: Manrope;
+    @media (max-width: 800px) {
+        display: none;
+    }
 }
 .logoText {
-  display: block;
-  @media (max-width: 800px) {
-    display: none;
-  }
-  color: var(--foreground-primary);
+    display: block;
+    @media (max-width: 800px) {
+        display: none;
+    }
+    color: var(--foreground-primary);
 }
 .buttonCircle {
-  text-decoration: none;
-  width: 44px;
-  position: relative;
-  border-radius: 30px;
-  background-color: var(--container-divider);
-  border: 1px solid var(--container-divider);
-  box-sizing: border-box;
-  height: 44px;
-  transition: 1s;
-  align-items: center;
-  justify-content: center;
-  display: none;
-  cursor: pointer;
-  @media (max-width: 800px) {
-    display: flex;
-  }
-  @media (prefers-color-scheme: dark) {
-    img {
-      filter: invert(1);
+    text-decoration: none;
+    width: 44px;
+    position: relative;
+    border-radius: 30px;
+    background-color: var(--container-divider);
+    border: 1px solid var(--container-divider);
+    box-sizing: border-box;
+    height: 44px;
+    transition: 1s;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    cursor: pointer;
+    @media (max-width: 800px) {
+        display: flex;
     }
-  }
+    @media (prefers-color-scheme: dark) {
+        img {
+            filter: invert(1);
+        }
+    }
 }
 .buttonCircle:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-sizing: border-box;
 }
 .drawer {
-  position: fixed;
-  right: 0px;
-  top: 0px;
-  z-index: 10;
-  opacity: 0;
-  animation: fadeIn 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    z-index: 10;
+    opacity: 0;
+    animation: fadeIn 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
 }
 @keyframes fadeIn {
-  0% {
-    transform: translateX(20px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
+    0% {
+        transform: translateX(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 .selected {
-  background-color: var(--container-divider-secondary);
+    background-color: var(--container-divider);
 }
