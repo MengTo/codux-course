@@ -14,7 +14,7 @@
   position: relative;
   font-size: 16px;
   line-height: 24px;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--foreground-secondary);
 }
 .headerButtonInfo {
   width: 60px;
@@ -24,15 +24,15 @@
   justify-content: flex-end;
   text-align: center;
   font-size: 12px;
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--foreground-tertiary);
 }
 .headerButton {
   text-decoration: none;
   flex: 1;
   backdrop-filter: blur(100px);
   border-radius: 20px;
-  background-color: #000;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: var(--background-primary);
+  border: 1px solid var(--container-divider-secondary);
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
@@ -45,15 +45,15 @@
   color: inherit;
 }
 .headerButton:hover {
-  background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), #000;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: var(--container-divider);
+  border: 1px solid var(--container-divider);
   box-sizing: border-box;
 }
 .headerMenu {
   width: 100%;
   border-radius: 32px;
-  background-color: #000;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: var(--background-primary);
+  border: 1px solid var(--container-divider);
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
@@ -94,8 +94,8 @@
   color: inherit;
 }
 .buttonLink:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: var(--container-divider);
+  border: 1px solid var(--container-divider);
   box-sizing: border-box;
   transition: 1s;
 }
@@ -190,5 +190,5 @@
   gap: 60px;
   text-align: left;
   font-size: 20px;
-  color: #fff;
+  color: var(--foreground-primary);
 }

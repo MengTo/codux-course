@@ -1,15 +1,10 @@
-import classNames from 'classnames';
 import styles from './drawer.module.scss';
 
 export interface DrawerProps {
     className?: string;
 }
 
-/**
- * This component was created using Codux's Default new component template.
- * To create custom component templates, see https://help.codux.com/kb/en/article/kb16522
- */
-export const Drawer = ({ className }: DrawerProps) => {
+export const Drawer = ({}: DrawerProps) => {
     return (
         <div className={styles.drawer} data-animate-on-scroll>
             <div className={styles.headerMenu}>
