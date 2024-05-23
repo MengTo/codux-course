@@ -60,7 +60,8 @@ export const Header = ({ className, selectedButton }: HeaderProps) => {
                         <div className={styles.div}>252</div>
                     </div>
                 </Link>
-                <div
+                <Link
+                    to={'/updates'}
                     className={`${styles.button} ${
                         selectedButton === 'Updates' ? styles.selected : ''
                     }`}
@@ -70,8 +71,10 @@ export const Header = ({ className, selectedButton }: HeaderProps) => {
                         <div className={styles.total}>2024</div>
                         <div className={styles.div}>May</div>
                     </div>
-                </div>
-                <div
+                </Link>
+                <a
+                    href="https://designcode.io"
+                    target="_blank"
                     className={`${styles.button} ${
                         selectedButton === 'Buy Now' ? styles.selected : ''
                     }`}
@@ -81,7 +84,7 @@ export const Header = ({ className, selectedButton }: HeaderProps) => {
                         <div className={styles.total}>Early</div>
                         <div className={styles.div}>Access</div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     );

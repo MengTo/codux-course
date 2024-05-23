@@ -1,0 +1,19 @@
+.root {
+    margin: 0 auto;
+    text-align: start;
+    display: flex;
+    flex-direction: row;
+    border-radius: 30px;
+    padding: 60px;
+    gap: 60px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @media (max-width: 800px) {
+        padding: 30px;
+    }
+    @media (max-width: 400px) {
+        padding: 20px;
+    }
+}
