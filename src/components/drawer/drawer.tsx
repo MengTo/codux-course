@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styles from './drawer.module.scss';
 
 export interface DrawerProps {
@@ -8,21 +9,21 @@ export const Drawer = ({}: DrawerProps) => {
     return (
         <div className={styles.drawer} data-animate-on-scroll>
             <div className={styles.headerMenu}>
-                <a className={styles.headerButton}>
+                <Link to={'/browse'} className={styles.headerButton}>
                     <div className={styles.headerButtonText}>Designs</div>
                     <div className={styles.headerButtonInfo}>
                         <div className={styles.headerButtonCaption}>Total</div>
                         <div className={styles.headerButtonFootnote}>252</div>
                     </div>
-                </a>
-                <a className={styles.headerButton}>
+                </Link>
+                <Link to={'/updates'} className={styles.headerButton}>
                     <div className={styles.headerButtonText}>Updates</div>
                     <div className={styles.headerButtonInfo}>
                         <div className={styles.headerButtonCaption}>2024</div>
                         <div className={styles.headerButtonFootnote}>May</div>
                     </div>
-                </a>
-                <a className={styles.headerButton}>
+                </Link>
+                <a href="https://designcode.io" className={styles.headerButton}>
                     <div className={styles.headerButtonText}>Buy Now</div>
                     <div className={styles.headerButtonInfo}>
                         <div className={styles.headerButtonCaption}>Early</div>
