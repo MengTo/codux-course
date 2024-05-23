@@ -148,3 +148,36 @@
     font-family: Manrope;
     max-width: 1100px;
 }
+.title,
+.subtitle,
+.text,
+.buttons,
+.image {
+    opacity: 0;
+    animation: fadeIn 1s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+.title {
+    animation-delay: 0.1s;
+}
+.subtitle {
+    animation-delay: 0.2s;
+}
+.text {
+    animation-delay: 0.3s;
+}
+.buttons {
+    animation-delay: 0.4s;
+}
+.image {
+    animation-delay: 0.5s;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

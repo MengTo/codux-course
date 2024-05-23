@@ -14,6 +14,7 @@ import HomeimageDark9 from '../../assets/homeimagedark9.jpeg';
 import { GalleryImage } from '../gallery-image/gallery-image';
 import ChevronDownSvg from '../../assets/chevron down.svg';
 import MagnifyingGlassSvg from '../../assets/magnifying glass.svg';
+import { Grid } from '../grid/grid';
 
 const images = [
     { src: HomeimageDark1, alt: 'Home Image Dark 1' },
@@ -34,7 +35,8 @@ export interface BrowsePageProps {
 export const BrowsePage = ({ className }: BrowsePageProps) => {
     return (
         <div className={classNames(styles.root, className)}>
-            <Header selectedButton='Designs' />
+            <Grid />
+            <Header selectedButton="Designs" />
             <div className={styles.menu}>
                 <div className={styles.dropdowns}>
                     <div className={classNames(styles.button, styles.selected)}>

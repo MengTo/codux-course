@@ -30,7 +30,7 @@
 
     color: var(--foreground-primary);
     text-decoration: none;
-    &:hover {
+    :hover {
         color: var(--foreground-secondary);
     }
     @media (prefers-color-scheme: dark) {
