@@ -4,13 +4,13 @@ import { UpdateItem } from '../update-item/update-item';
 import { Header } from '../header/header';
 import { Grid } from '../grid/grid';
 import { Footer } from '../footer/footer';
+import { Helmet } from 'react-helmet';
 export interface UpdatesPageProps {
     className?: string;
 }
 
 import update1Image from '../../assets/homeimagedark10.jpeg';
 import update2Image from '../../assets/homeimagedark11.jpeg';
-import update3Image from '../../assets/homeimagedark12.jpeg';
 const updates = [
     {
         date: 'May 22, 2024',
@@ -29,6 +29,14 @@ const updates = [
 export const UpdatesPage = ({ className }: UpdatesPageProps) => {
     return (
         <div className={classNames(styles.root, className)}>
+            <Helmet>
+                <title>Updates - DesignCode UI iOS</title>
+                <meta
+                    name="description"
+                    content="Create iOS apps faster with our extensive Figma UI kit. It offers adaptive components, font/color variables, dynamic type sizes, and both light and dark mode designs."
+                />
+                <meta name="keywords" content="Figma UI Kit, iOS App Design, UI Design" />
+            </Helmet>
             <Grid />
             <Header selectedButton="Updates" />
             {updates.map((update, index) => (

@@ -15,6 +15,7 @@ import { GalleryImage } from '../gallery-image/gallery-image';
 import ChevronDownSvg from '../../assets/chevron down.svg';
 import MagnifyingGlassSvg from '../../assets/magnifying glass.svg';
 import { Grid } from '../grid/grid';
+import { Helmet } from 'react-helmet';
 
 const images = [
     { src: HomeimageDark1, alt: 'Home Image Dark 1' },
@@ -35,6 +36,14 @@ export interface BrowsePageProps {
 export const BrowsePage = ({ className }: BrowsePageProps) => {
     return (
         <div className={classNames(styles.root, className)}>
+            <Helmet>
+                <title>Browse - DesignCode UI iOS</title>
+                <meta
+                    name="description"
+                    content="Create iOS apps faster with our extensive Figma UI kit. It offers adaptive components, font/color variables, dynamic type sizes, and both light and dark mode designs."
+                />
+                <meta name="keywords" content="Figma UI Kit, iOS App Design, UI Design" />
+            </Helmet>
             <Grid />
             <Header selectedButton="Designs" />
             <div className={styles.menu}>

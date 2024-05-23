@@ -6,6 +6,7 @@ import { Header } from '../../components/header/header';
 import { Gallery } from '../../components/gallery/gallery';
 import { Grid } from '../../components/grid/grid';
 import { Footer } from '../../components/footer/footer';
+import { Helmet } from 'react-helmet';
 
 export interface HomePageProps {
     className?: string;
@@ -14,6 +15,14 @@ export interface HomePageProps {
 export const HomePage = ({}: HomePageProps) => {
     return (
         <div className={styles.root}>
+            <Helmet>
+                <title>Figma UI Kit and design system for iOS</title>
+                <meta
+                    name="description"
+                    content="Create iOS apps faster with our extensive Figma UI kit. It offers adaptive components, font/color variables, dynamic type sizes, and both light and dark mode designs."
+                />
+                <meta name="keywords" content="Figma UI Kit, iOS App Design, UI Design" />
+            </Helmet>
             <Grid />
             <Header />
             <div className={styles.hero}>
