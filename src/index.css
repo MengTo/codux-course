@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=SF+Pro:wght@400;600&display=swap');
 
 html,
 body,
@@ -82,12 +81,12 @@ time,
 mark,
 audio,
 video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -101,120 +100,102 @@ hgroup,
 menu,
 nav,
 section {
-  display: block;
+    display: block;
 }
 body {
-  line-height: 1;
+    line-height: 1;
 }
 ol,
 ul {
-  list-style: none;
+    list-style: none;
 }
 blockquote,
 q {
-  quotes: none;
+    quotes: none;
 }
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
-  content: none;
+    content: '';
+    content: none;
 }
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 body {
-  margin: 0;
-  line-height: normal;
-  font-family: Manrope;
+    margin: 0;
+    line-height: normal;
+    font-family: Manrope;
 }
 
 :root {
-  /* font */
-  --font: Manrope;
+    /* font */
+    --font: Manrope;
 
-  /* font sizes */
-  --subheadline-semibold-size: 15px;
-  --caption-2-regular-size: 11px;
-  --headline-medium-size: 20px;
-  --body-regular-size: 16px;
-  --headings-heading-5-size: 24px;
-  --headings-heading-2-size: 50px;
-  --small-regular-size: 12px;
+    /* font sizes */
+    --subheadline-semibold-size: 15px;
+    --caption-2-regular-size: 11px;
+    --headline-medium-size: 20px;
+    --body-regular-size: 16px;
+    --headings-heading-5-size: 24px;
+    --headings-heading-2-size: 50px;
+    --small-regular-size: 12px;
 
-  /* Gaps */
-  --gap-41xl: 60px;
-  --gap-3xs: 10px;
-  --gap-5xs: 8px;
+    /* Animation */
+    --transition: transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
 
-  /* Paddings */
-  --padding-3xs: 10px;
-  --padding-5xs: 8px;
-  --padding-base: 16px;
+    /* Font Size */
+    --small: 12px;
+    --caption: 13px;
+    --footnote: 14px;
+    --body: 16px;
+    --body-large: 18px;
+    --headline: 20px;
+    --heading-5: 24px;
+    --heading-4: 30px;
+    --heading-3: 40px;
+    --heading-2: 50px;
+    --heading-1: 60px;
 
-  /* Border radiuses */
-  --br-11xl: 30px;
-  --br-80xl: 99px;
-  --br-xl: 20px;
-
-  /* Effects */
-  --blur-100: blur(100px);
-  --shadow-large-right-subtle: 0px 1px 2px rgba(0, 0, 0, 0.05), 10px 10px 30px rgba(0, 0, 0, 0.05),
-    40px 40px 80px rgba(0, 0, 0, 0.02);
-  --transition: transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
-
-  /* Font Size */
-  --small: 12px;
-  --caption: 13px;
-  --footnote: 14px;
-  --body: 16px;
-  --body-large: 18px;
-  --headline: 20px;
-  --heading-5: 24px;
-  --heading-4: 30px;
-  --heading-3: 40px;
-  --heading-2: 50px;
-  --heading-1: 60px;
-
-  /* Colors */
-  --background-primary: rgb(255, 255, 255);
-  --background-secondary: rgb(255, 255, 255 , 0.1);
-  --background-tertiary: rgb(0, 0, 0 , 0.05);
-  --button-foreground: rgb(255, 255, 255);
-  --container-background: rgb(255, 255, 255 , 0.6);
-  --container-background-recessed: rgb(255, 255, 255 , 0.9);
-  --container-background-secondary: rgb(255, 255, 255 , 0.1);
-  --container-background-tertiary: rgb(255, 255, 255 , 0.9);
-  --container-border: rgb(255, 255, 255 , 0.5);
-  --container-border-secondary: rgb(255, 255, 255 , 0.2);
-  --container-divider: rgb(0, 0, 0 , 0.1);
-  --container-divider-secondary: rgb(0, 0, 0 , 0.2);
-  --foreground-primary: rgb(0, 0, 0);
-  --foreground-secondary: rgb(0, 0, 0 , 0.7);
-  --foreground-tertiary: rgb(0, 0, 0 , 0.5);
-
-  @media (prefers-color-scheme: dark) {
-    --background-primary: rgb(0, 0, 0);
-    --background-secondary: rgb(0, 0, 0 , 0.1);
-    --background-tertiary: rgb(255, 255, 255 , 0.1);
+    /* Colors */
+    --background-primary: rgb(255, 255, 255);
+    --background-secondary: rgb(255, 255, 255, 0.1);
+    --background-tertiary: rgb(0, 0, 0, 0.05);
     --button-foreground: rgb(255, 255, 255);
-    --container-background: rgb(0, 0, 0 , 0.6);
-    --container-background-recessed: rgb(0, 0, 0 , 0.2);
-    --container-background-secondary: rgb(0, 0, 0 , 0.1);
-    --container-background-tertiary: rgb(255, 255, 255 , 0.1);
-    --container-border: rgb(255, 255, 255 , 0.1);
-    --container-border-secondary: rgb(255, 255, 255 , 0.1);
-    --container-divider: rgb(255, 255, 255 , 0.1);
-    --container-divider-secondary: rgb(255, 255, 255 , 0.2);
-    --foreground-primary: rgb(255, 255, 255);
-    --foreground-secondary: rgb(255, 255, 255 , 0.7);
-    --foreground-tertiary: rgb(255, 255, 255 , 0.5);
-  }
+    --container-background: rgb(255, 255, 255, 0.6);
+    --container-background-recessed: rgb(255, 255, 255, 0.9);
+    --container-background-secondary: rgb(255, 255, 255, 0.1);
+    --container-background-tertiary: rgb(255, 255, 255, 0.9);
+    --container-border: rgb(255, 255, 255, 0.5);
+    --container-border-secondary: rgb(255, 255, 255, 0.2);
+    --container-divider: rgb(0, 0, 0, 0.1);
+    --container-divider-secondary: rgb(0, 0, 0, 0.2);
+    --foreground-primary: rgb(0, 0, 0);
+    --foreground-secondary: rgb(0, 0, 0, 0.7);
+    --foreground-tertiary: rgb(0, 0, 0, 0.5);
+
+    @media (prefers-color-scheme: dark) {
+        --background-primary: rgb(0, 0, 0);
+        --background-secondary: rgb(0, 0, 0, 0.1);
+        --background-tertiary: rgb(255, 255, 255, 0.1);
+        --button-foreground: rgb(255, 255, 255);
+        --container-background: rgb(0, 0, 0, 0.6);
+        --container-background-recessed: rgb(0, 0, 0, 0.2);
+        --container-background-secondary: rgb(0, 0, 0, 0.1);
+        --container-background-tertiary: rgb(255, 255, 255, 0.1);
+        --container-border: rgb(255, 255, 255, 0.1);
+        --container-border-secondary: rgb(255, 255, 255, 0.1);
+        --container-divider: rgb(255, 255, 255, 0.1);
+        --container-divider-secondary: rgb(255, 255, 255, 0.2);
+        --foreground-primary: rgb(255, 255, 255);
+        --foreground-secondary: rgb(255, 255, 255, 0.7);
+        --foreground-tertiary: rgb(255, 255, 255, 0.5);
+    }
 }
 
 body {
-  background-color: var(--background-primary);
+    background-color: var(--background-primary);
 }
