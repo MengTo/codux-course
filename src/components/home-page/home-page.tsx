@@ -37,14 +37,20 @@ export const HomePage = ({}: HomePageProps) => {
                         dark mode designs.
                     </p>
                     <div className={styles.buttons}>
-                        <button className={styles.primary}>
+                        <a
+                            href="https://www.figma.com/file/tMjSwKbrcKbmb1Q4aDokxn/DesignCode-UI?type=design&node-id=0%3A1&mode=design&t=rHj8CqbIvJLLUtty-1&utm_medium=affiliate&utm_source=partnerstack&utm_campaign=mengto6739&link=figma-3-signup-promo"
+                            className={styles.primary}
+                        >
                             <img src={FigmaLogoSvg} alt="" height="20" width="20" />
                             Preview in figma
-                        </button>
-                        <button className={styles.secondary}>
+                        </a>
+                        <a
+                            href="https://www.figma.com/community/file/1316701892522528301"
+                            className={styles.secondary}
+                        >
                             Free download
                             <img src={ChevronRightSvg} alt="" height="20" width="20" />
-                        </button>
+                        </a>
                     </div>
                 </div>
                 <img

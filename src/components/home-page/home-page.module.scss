@@ -98,6 +98,11 @@
     font-style: normal;
     font-weight: 500;
     line-height: 27px; /* 150% */
+    text-decoration: none;
+
+    &:hover {
+        color: var(--foreground-primary);
+    }
 
     @media (prefers-color-scheme: dark) {
         img {
